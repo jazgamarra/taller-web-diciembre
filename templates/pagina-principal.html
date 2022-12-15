@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agregar codigo de Play CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
-    <!-- Esto es un comentario ;ldgss -->
-    <!--   {{ nombre_del_la_variable }}  -->
-    <h1> Nombre: {{nombre}} {{apellido}}  </h1>
-    <p> Especie: Pinguino </p>
+<body class="bg-slate-800 text-white	">
+    <!-- Esto es un comentario -->
+    <!-- Sintaxis de Jinja  {{ nombre_del_la_variable }}  -->
+    <!-- Alto = height /// Ancho = width  -->
+    <h1>Titulo</h1>
 
-    <img src="https://pbs.twimg.com/media/EzS3G6rUcAcfWVq.jpg" alt="Pinguino Fachero"> 
+    <div class="bg-sky-700 p-10">
+        <h1 class="text-3xl	font-mono	"> Nombre: {{nombre}} {{apellido}}  </h1>
+        <p> Especie: Pinguino </p>
+    
+        <img class="w-64 m-2	" src="https://pbs.twimg.com/media/EzS3G6rUcAcfWVq.jpg" alt="Pinguino Fachero" > 
+    </div>
+
 </body>
 </html> 
