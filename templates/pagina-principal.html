@@ -12,13 +12,14 @@
     <!-- Esto es un comentario -->
     <!-- Sintaxis de Jinja  {{ nombre_del_la_variable }}  -->
     <!-- Alto = height /// Ancho = width  -->
-    <h1>Titulo</h1>
+    <!-- <h1>Titulo</h1> -->
 
     <div class="bg-sky-700 p-10">
-        <h1 class="text-3xl	font-mono	"> Nombre: {{nombre}} {{apellido}}  </h1>
-        <p> Especie: Pinguino </p>
+        <h1 class="text-3xl	font-mono	"> Nombre: {{personaje_uno['name']}} </h1>
+
+        <p> Especie: {{ personaje_uno['species'] }} </p>
     
-        <img class="w-64 m-2	" src="https://pbs.twimg.com/media/EzS3G6rUcAcfWVq.jpg" alt="Pinguino Fachero" > 
+        <img class="w-64 m-2" src="{{ personaje_uno['image'] }}" alt="Pinguino Fachero" > 
     </div>
 
 </body>
