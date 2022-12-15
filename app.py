@@ -10,12 +10,10 @@ app = Flask(__name__)
 def pagina_principal (): 
     # Pedido a la api 
     lista_de_personajes = requests.get('https://rickandmortyapi.com/api/character').json()
-    personajes = lista_de_personajes['results']
+    # Lista de todos los personajes 
+    personajes = lista_de_personajes['results'] 
 
-    # Acceder a la informacion de un solo personaje 
-    personaje_uno = personajes[0]
-
-    return render_template("pagina-principal.html", personaje_uno=personaje_uno)
+    return render_template("pagina-principal.html", personajes=personajes)
 
 # Creamos una ruta de ejemplo
 @app.route("/ejemplo") 

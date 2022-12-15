@@ -14,13 +14,16 @@
     <!-- Alto = height /// Ancho = width  -->
     <!-- <h1>Titulo</h1> -->
 
-    <div class="bg-sky-700 p-10">
-        <h1 class="text-3xl	font-mono	"> Nombre: {{personaje_uno['name']}} </h1>
+    <div class="flex flex-wrap">
+        {% for personaje in personajes: %}
+        <div class="bg-sky-700 p-5 m-10 ">
+            <h1 class="text-3xl	font-mono	"> {{personaje['name']}} </h1>
 
-        <p> Especie: {{ personaje_uno['species'] }} </p>
-    
-        <img class="w-64 m-2" src="{{ personaje_uno['image'] }}" alt="Pinguino Fachero" > 
+            <p> Especie: {{ personaje['species'] }} </p>
+
+            <img class="w-64 m-2" src="{{ personaje['image'] }}" alt="{{personaje['name']}}" > 
+        </div>
+        {% endfor %}
     </div>
-
 </body>
 </html> 
