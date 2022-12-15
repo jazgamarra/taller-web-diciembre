@@ -16,12 +16,12 @@
 
     <div class="flex flex-wrap">
         {% for personaje in personajes: %}
-        <div class="bg-sky-700 p-5 m-10 ">
-            <h1 class="text-3xl	font-mono	"> {{personaje['name']}} </h1>
+        <div class="bg-slate-500 m-10 text-center w-64 p-2 rounded-xl">
+            <h1 class="text-xl	font-mono	break-all"> {{personaje['name']}} </h1>
 
             <p> Especie: {{ personaje['species'] }} </p>
 
-            <img class="w-64 m-2" src="{{ personaje['image'] }}" alt="{{personaje['name']}}" > 
+            <img class=" rounded-xl" src="{{ personaje['image'] }}" alt="{{personaje['name']}}" > 
         </div>
         {% endfor %}
     </div>
