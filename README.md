@@ -1,5 +1,5 @@
 # taller-web-diciembre
-Repositorio del taller web desarrollado en Penguin Academy en el bootcamp 14
+Repositorio del taller web desarrollado en Penguin Academy
 
 ## Tecnologias
 - HTML 
